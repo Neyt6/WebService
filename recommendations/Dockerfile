@@ -9,4 +9,4 @@ RUN python -m grpc_tools.protoc -I ../protobufs --python_out=. \
  --grpc_python_out=. ../protobufs/recommendations.proto
 EXPOSE 5001
 ENV FLASK_APP=marketplace.py
-ENTRYPOINT [ "python", "marketplace.py"]
+ENTRYPOINT [ "python", "recommendations.py"]
